@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/carrello_Style.css">
+    <!--  SIMBOLO CARRELLO  -->
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- fine -->
+    <!--  FONT TITOLO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <!-- fine -->
+    <title>Vapore</title>
+</head>
+
+<body>
+
+    <header id="testata">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">                    
+                    <h1 id="titolo"><span id="char_title">V</span>APORE</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <main>
+        <div class="container" id="blocco_immagini">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h2 id="etichetta_immagini">Scegli il Titolo ed aggiungilo al Carrello 
+                        con un click!</h2>
+                </div>                    
+            </div>
+            <div class="row">                
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/fifa22.jpg" alt="fifa22.jpg" id="FIFA 22" 
+                        onclick="add_to_Cart(this.id, this.src)">
+                </div>
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/BG3.jpg" alt="BG3.jpg" id="Baldur's Gate III" 
+                        onclick="add_to_Cart(this.id, this.src)">        
+                </div>
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/civ6.jpg" alt="civ6.jpg" id="Civilization VI" 
+                        onclick="add_to_Cart(this.id, this.src)">    
+                </div>
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/ds3.jpg" alt="ds3.jpg" id="Dark Souls III" 
+                        onclick="add_to_Cart(this.id, this.src)">    
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/EldenRing.jpg" alt="EldenRing.jpg" id="Elden Ring" 
+                        onclick="add_to_Cart(this.id, this.src)">
+                </div>
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/JW2.jpg" alt="JW2.jpg" id="Jurassic World Evolution II" 
+                        onclick="add_to_Cart(this.id, this.src)">    
+                </div>
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/nms.jpg" alt="nms.jpg" id="No Man's Sky" 
+                        onclick="add_to_Cart(this.id, this.src)"> 
+                </div>
+                <div class="col-12 col-sm-6 col-lg d-flex justify-content-center">
+                    <img class="bottone_immagine" src="Immagini/tekken7.jpg" alt="tekken7.jpg" id="Tekken 7" 
+                        onclick="add_to_Cart(this.id, this.src)">       
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 id="etichetta_carrello">
+                        Carrello
+                        <span id="simbolo_cart" class="material-symbols-outlined">
+                            shopping_cart_checkout
+                        </span>
+                    </h2>
+                </div>                    
+            </div>
+            <div class="row justify-content-center">
+                <ul class="col" id="carrello">
+                    <div class="row" id="cart_row"></div>
+                </ul>
+            </div>            
+        </div>       
+       
+        <div id="spesa_totale" class="container">
+            <div class="row">
+                <div class="col-12 col-sm d-flex justify-content-center">
+                    <input class="bottoni_spesa" type="button" value="RESET CART" onclick="svuota_carrello()">
+                </div>
+                <div class="col-12 col-sm d-flex justify-content-center">
+                    <div id="schermo_cassa">Conto: 0.00$</div>
+                </div>
+                <div class="col-12 col-sm d-flex justify-content-center">
+                    <input class="bottoni_spesa" type="button" value="PAGAMENTO" onclick="">                    
+                </div>
+            </div>
+        </div> 
+    </main>
+    
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="">Vapore.com</a>
+        </div>
+    </footer>
+
+    <script src="JavaScript/jscript_vapore.js"></script>    
+</body>
+</html>
+

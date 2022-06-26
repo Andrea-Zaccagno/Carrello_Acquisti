@@ -1,0 +1,108 @@
+body{
+    background-image: url(../Immagini/sfondo.jpg);
+}
+
+#testata{
+    margin-bottom: 0.5rem;
+}
+
+#titolo{
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 4rem;
+}
+
+#char_title{
+    font-size: 6rem;
+}
+
+#etichetta_carrello{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#simbolo_cart{
+    font-size: 2.7rem;
+}
+
+#blocco_immagini .row{
+    margin-bottom: 1.5rem;
+}
+
+.bottone_immagine{
+    /*  DIMENSIONI  */
+    width: 12.5rem;
+    height: 18rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    /*  BORDO  */
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    border-radius: 1rem;
+    /*  OMBRE  */
+    box-shadow: 0.3rem 0.3rem 0.2rem #8b7c7c;
+    background-color: rgb(156, 195, 228);
+}
+
+.bottone_immagine:active{
+    transform: translate3d(0.2rem, 0.3rem, 0rem);
+}
+
+#carrello{
+    width: 70%;
+    height: 13rem;
+    overflow: scroll;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: black;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+
+.prodotto_carrello{
+    width: 7rem;
+    margin: 0.5rem;
+    list-style-type: none;
+    margin-bottom: 0.2rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    text-align: center;
+}
+
+.icona_carrello{
+    width: 6rem;
+    height: 8rem;
+    padding: 0.5rem;
+}
+
+#spesa_totale{
+    margin-top: 1.5rem;
+}
+
+#schermo_cassa{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.bottoni_spesa{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-color: black;
+    border-radius: 0.5rem;
+    background-color: aqua;
+    margin-bottom: 0.5rem;
+}
+
+.bottoni_spesa:active{
+    transform: translate3d(0.2rem, 0.3rem, 0rem);
+}
+
+main{
+    margin-bottom: 1.5rem;
+}
+
+
